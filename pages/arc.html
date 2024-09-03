@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Piece | Arcs</title>
+    <link rel="stylesheet" href="../stylesheet.css" />
+    <!-- <script src="../script.js" defer></script> -->
+  </head>
+  <body>
+    <div class="nav">
+      <ul class="nav-bar">
+        <li><a href="./index.html">Home</a></li>
+        <span class="pages">
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./arc.html">Arcs</a></li>
+        </span>
+      </ul>
+    </div>
+    <div
+      class="header-para"
+      style="margin: 1rem 0 0 0; max-inline-size: none; width: 80vw"
+    >
+      <h2>More on <em>One Piece</em></h2>
+      <p>
+        <em>One Piece</em>, having been serialized for over 20 years, is really
+        long. Currently the manga has over 1120 chapters! The series is divided
+        into sagas and arcs. Colloquially, the sagas are referred to as arcs.
+        I'm willing to bet no one really talks about individual arcs such as
+        'Romance Dawn' or 'Jaya'. Instead, they will just refer to the name of
+        the saga 'East Blue' or 'Skypiea'. Below you can select an arc to learn
+        more about it (and pressing the button will totally do something).
+      </p>
+    </div>
+    <div class="input">
+      <select id="arc-list">
+        <option value="preskip">Pre-Timeskip Arcs</option>
+        <option value="postskip">Post-Timeskip Arcs</option>
+        <option value="east-blue">East Blue</option>
+        <option value="alabasta">Alabasta</option>
+        <option value="skypiea">Skypiea</option>
+        <option value="water-7">Water 7</option>
+        <option value="thriller-bark">Thriller Bark</option>
+        <option value="summit-war">Summit War</option>
+        <option value="fishman-island">Fish-Man Island</option>
+        <option value="dressrosa">Dressrosa</option>
+        <option value="four-emperors">Four Emperors</option>
+      </select>
+      <button id="btn">Go!</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Summary</th>
+          <th>Episodes</th>
+          <th>Major Antagonist</th>
+        </tr>
+      </thead>
+      <tbody id="arc-info">
+        <tr class="curr">
+          <td>East Blue</td>
+          <td>
+            Luffy sets out for the Grand Line, but first he needs a crew... Cue
+            the introduction of Zoro, Nami, Usopp, and Sanji!
+          </td>
+          <td>Episodes 1 to 61</td>
+          <td>
+            <ul>
+              <li>Buggy the Clown</li>
+              <li>Arlong</li>
+              <li>Marine Captain Smoker</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="curr">
+          <td>Alabasta</td>
+          <td>
+            The Strawhats finally reach the Grand Line! Meet the newest
+            Strawhats Chopper and Robin and watch their battles against Warlord
+            of the Sea Crocodile to end his reign over the kingdom of Alabasta.
+          </td>
+          <td>Episodes 62 to 135</td>
+          <td>
+            <ul>
+              <li>Warlord of the Sea, Crocodile</li>
+              <li>Baroque Works Agents</li>
+              <li>Wapol</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="curr">
+          <td>Skypiea</td>
+          <td>
+            An island in the sky!?!?!? The Stawhats go to Skypiea in search of
+            gold, but find the island in a state of disrepair. Why is this such
+            a common theme?
+          </td>
+          <td>Episodes 136 to 206</td>
+          <td>
+            <ul>
+              <li>Bellamy</li>
+              <li>Enel</li>
+              <li>NPC Marines</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="curr">
+          <td>Water 7</td>
+          <td>
+            With there ship, the Going Merry, heavily damaged after falling from
+            Skypiea the Strawhats set for Water 7. An island of shipwrights and
+            home to the newest Strawhat, Cyborg Franky. The Strawhats declare
+            war on the World Government to save the world!
+          </td>
+          <td>Episodes 207 to 325</td>
+          <td>
+            <ul>
+              <li>Admiral Aokiji (Kuzan)</li>
+              <li>Cipher Pol 9</li>
+              <li>The World Government</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="curr">
+          <td>Thriller Bark</td>
+          <td>
+            Join the Strawhats at Thriller Bark, base of Warlord of the Sea
+            Gecko Moria and welcome the newest Strawhat Humming Swordsman
+            Brooke!
+          </td>
+          <td>Episodes 326 to 384</td>
+          <td>
+            <ul>
+              <li>Ryuma</li>
+              <li>Warlord of the Sea, Gecko Moria</li>
+              <li>Warlord of the Sea, Kuma</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="curr">
+          <td>Summit War</td>
+          <td>
+            The Strawhats convene with the rest of the Worst Generation on
+            Sabaody Island where they learn how truly weak they are. After an
+            intense battle on Marineford, the Strawhats go their separate ways
+            to prepare for their adventures in the New World.
+          </td>
+          <td>Episodes 385 to 516</td>
+          <td>
+            <ul>
+              <li>Blackbeard</li>
+              <li>Navy Admirals</li>
+              <li>The Seven Warlords of the Sea</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
