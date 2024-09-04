@@ -37,7 +37,6 @@ h2 {
 .nav-bar {
     display: flex;
     flex-direction: row;
-    list-style-type: none;
     justify-content: space-between;
     padding: 0.5rem 0 0.5rem 0;
     width: 81vw;
@@ -46,17 +45,17 @@ h2 {
 .pages {
     display: flex;
     flex-direction: row;
-    padding-left: 1rem;
     gap: 2rem;
 }
 
-li {
+a {
     padding: 0.5rem;
 }
 
-div li:hover {
+div a:hover {
     background-color: rgb(128, 128, 128, 0.5);
     border-radius: 0.5rem;
+    padding: 0.5rem;
 }
 
 a {
