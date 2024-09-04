@@ -154,7 +154,7 @@ td img {
     gap: 1rem;
 }
 
-td li {
+td > ul > li {
     margin: 0 0 0 1rem;
     padding: 0;
 }

@@ -1,8 +1,10 @@
-// These are handwritten, not by ChatGPT. Over summer I started a course called 'The Odin Project' which taught me a lot of HTML/CSS and JS. Wish that I continued studying cause doing it this way feels excessively complicated.
+// Over summer I started a course called 'The Odin Project' which taught me a lot of HTML/CSS and JS. Wish that I continued studying cause vanilla HTML/CSS/JS feels complicated.
+// Get the select, button, and tbody tag.
 const input = document.getElementById("arc-list");
 const btn = document.getElementById("btn");
-const tbody = document.querySelector("#arc-info");
+const tbody = document.getElementById('arc-info');
 
+// Event listener for the button. Displays the appropriate row based on selection.
 btn.addEventListener("click", () => {
   document.querySelectorAll(".curr").forEach((element) => {
     element.remove();
@@ -30,6 +32,7 @@ btn.addEventListener("click", () => {
   }
 });
 
+// Function for creating a single new row.
 function newRow(arc) {
   arr = createRowElements();
   switch (arc) {
@@ -64,6 +67,7 @@ function newRow(arc) {
   appendRowElements(arr);
 }
 
+// Function for creating the row elements.
 function createRowElements() {
   const row = document.createElement("tr");
   const name = document.createElement("td");
@@ -89,6 +93,7 @@ function createRowElements() {
   ];
 }
 
+// Function for appending the row elements after textContent has been added.
 function appendRowElements(elementArr) {
   elementArr[6].appendChild(elementArr[7]);
   elementArr[6].appendChild(elementArr[8]);
@@ -101,6 +106,7 @@ function appendRowElements(elementArr) {
   tbody.appendChild(elementArr[1]);
 }
 
+// Functions adding textContent based on arc.
 function eastblue(elementArr) {
   elementArr[2].textContent = "East Blue";
   elementArr[3].textContent =
